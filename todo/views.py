@@ -28,3 +28,11 @@ def completeTodo (request, todo_id):
     todo.save()
 
     return redirect('index')
+
+def deleteCompletes (request):
+    Todo.objects.filter(complete__exact=True).delete()
+    return redirect('index')
+
+def deleteAll (request):
+    Todo.objects.all().delete()
+    return redirect('index')

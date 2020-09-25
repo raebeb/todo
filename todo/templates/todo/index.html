@@ -39,14 +39,14 @@
 						<div class="col-lg-12">
 							<div class="btn-toolbar">
 								<div class="btn-group">
-									<button type="button" class="btn btn-warning">
+									<a href=" {% url 'deleteCompletes' %}"><button type="button" class="btn btn-warning">
 										<i class="glyphicon glyphicon-trash"></i> Eliminar completadas
-									</button>
+									</button></a>
 								</div>
 								<div class="btn-group">
-									<button type="button" class="btn btn-warning">
+									<a href="{% url 'deleteAll' %}"><button type="button" class="btn btn-warning">
 										<i class="glyphicon glyphicon-trash"></i> Eliminar todo
-									</button>
+									</button></a>
 								</div>
 							</div>
 						</div>
